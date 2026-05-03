@@ -1,6 +1,5 @@
 import React from "react";
 import { saveAs } from "file-saver";
-import Sathish_resume from "../assets/Sathish_resume.pdf";
 import { HashLink as Link } from "react-router-hash-link";
 import { motion } from "framer-motion";
 import { FaReact, FaNodeJs } from "react-icons/fa";
@@ -9,10 +8,9 @@ import { DiJavascript1 } from "react-icons/di";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
-
 const MainPage = () => {
   const handleDownload = () => {
-    saveAs(Sathish_resume, "sathish_resume.pdf");
+    saveAs("/Sathish_R_Resume.pdf", "Sathish_R_Resume.pdf");
   };
   const skills = [
     { name: "React", icon: <FaReact className="w-full h-full" />, level: 90 },
