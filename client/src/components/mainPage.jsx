@@ -1,6 +1,6 @@
 import React from "react";
 import { saveAs } from "file-saver";
-import Sathish_resume from "../assets/sathish_resume.pdf";
+import Sathish_resume from "../assets/Sathish_resume.pdf";
 import { HashLink as Link } from "react-router-hash-link";
 import { motion } from "framer-motion";
 import { FaReact, FaNodeJs } from "react-icons/fa";
@@ -29,9 +29,9 @@ const MainPage = () => {
     
     {
       title: "Chat App",
-      description: "Chating aplication with real-time updates using Socket.io and React with admin controles. ",
+      description: "Chatting application with real-time updates using Socket.io and React with admin controls.",
       tags: ["React", "Express", "Socket.io", "Tailwind","MongoDB"],
-      githubLink: "https://github.com/yourusername/task-manager",
+      githubLink: "https://github.com/sathish-RG",
       liveLink: "https://spectacular-horse-0f5464.netlify.app/auth",
       image: "/ChatApp.png"
     },
@@ -39,124 +39,106 @@ const MainPage = () => {
       title: "E-Commerce Platform",
       description: "Full-featured online store with cart, checkout, and admin dashboard built with MERN stack.",
       tags: ["React", "Node.js", "MongoDB", "Redux"],
-      githubLink: "https://github.com/yourusername/ecommerce",
+      githubLink: "https://github.com/sathish-RG",
       liveLink: "https://yourapp.com",
-      image: "/ChatApp-screenshot.jpg"
+      image: "https://placehold.co/600x400/blue/white?text=E-Commerce+Platform"
     },
     {
       title: "Portfolio Website",
       description: "Personal portfolio site showcasing projects and skills with responsive design.",
       tags: ["React", "Tailwind CSS", "Framer Motion"],
-      githubLink: "https://github.com/yourusername/portfolio",
+      githubLink: "https://github.com/sathish-RG",
       liveLink: "https://yourportfolio.com",
-      image: "/portfolio-screenshot.jpg"
+      image: "https://placehold.co/600x400/indigo/white?text=Portfolio+Website"
     }
   ];
   return (
     <div>
       {/* Home page content goes here */}
-      <section id="home" className="min-h-[520px] bg-blue-100 flex items-center justify-center py-16">
-  <div className="text-center max-w-2xl mx-4">
-    {/* Main Heading */}
-    <h1 className="text-4xl md:text-5xl font-bold text-blue-900 mb-4">
-      I'm Sathish
-    </h1>
-    
-    {/* Subheading */}
-    <h2 className="text-2xl md:text-3xl text-blue-600 mb-8">
-      Full-Stack MERN Developer
-    </h2>
-    
-    {/* Action Buttons */}
-    <div className="flex justify-center gap-4 mb-12">
-      <button
-        onClick={handleDownload}
-        className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg inline-flex items-center transition-all duration-300 hover:shadow-lg"
-      >
-        <svg
-          className="w-5 h-5 mr-2"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
-          />
-        </svg>
-        Download Resume
-      </button>
-      
-      <Link 
-        smooth 
-        to="#contact" 
-        className="bg-white hover:bg-gray-100 text-blue-600 border border-blue-600 font-medium py-3 px-6 rounded-lg inline-flex items-center transition-all duration-300 hover:shadow-lg"
-      >
-        Contact Me
-      </Link>
-    </div>
-    
-    {/* Social Links */}
-    <div className="flex justify-center gap-4">
-      <a 
-        href="https://github.com/sathish-RG" 
-        target="_blank" 
-        rel="noopener noreferrer"
-        aria-label="GitHub"
-        className="bg-gray-200 hover:bg-blue-600 p-3 rounded-full transition-colors duration-300 group"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          fill="currentColor"
-          viewBox="0 0 16 16"
-          className="text-gray-700 group-hover:text-white w-6 h-6"
-        >
-          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
-        </svg>
-      </a>
+      <section id="home" className="relative min-h-screen flex items-center justify-center py-20 overflow-hidden bg-slate-950">
+        {/* Background Decorative Elements */}
+        <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
+          <div className="absolute -top-[10%] -left-[10%] w-[50%] h-[50%] rounded-full bg-blue-600/20 blur-[120px] animate-pulse"></div>
+          <div className="absolute -bottom-[10%] -right-[10%] w-[50%] h-[50%] rounded-full bg-indigo-600/20 blur-[120px] animate-pulse" style={{ animationDelay: '2s' }}></div>
+        </div>
 
-      <a 
-        href="https://www.linkedin.com/in/sathish-rg/" 
-        target="_blank" 
-        rel="noopener noreferrer"
-        aria-label="LinkedIn"
-        className="bg-gray-200 hover:bg-blue-600 p-3 rounded-full transition-colors duration-300 group"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          fill="currentColor"
-          viewBox="0 0 16 16"
-          className="text-gray-700 group-hover:text-white w-6 h-6"
-        >
-          <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
-        </svg>
-      </a>
-
-      <a 
-        href="#contact" 
-        aria-label="Email"
-        className="bg-gray-200 hover:bg-blue-600 p-3 rounded-full transition-colors duration-300 group"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          fill="currentColor"
-          viewBox="0 0 16 16"
-          className="text-gray-700 group-hover:text-white w-6 h-6"
-        >
-          <path d="M8.941.435a2 2 0 0 0-1.882 0l-6 3.2A2 2 0 0 0 0 5.4v.314l6.709 3.932L8 8.928l1.291.718L16 5.714V5.4a2 2 0 0 0-1.059-1.765zM16 6.873l-5.693 3.337L16 13.372v-6.5Zm-.059 7.611L8 10.072.059 14.484A2 2 0 0 0 2 16h12a2 2 0 0 0 1.941-1.516M0 13.373l5.693-3.163L0 6.873z" />
-        </svg>
-      </a>
-    </div>
-  </div>
-</section>
+        <div className="relative z-10 text-center max-w-3xl mx-auto px-6">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            {/* Main Heading */}
+            <h1 className="text-5xl md:text-8xl font-extrabold text-white mb-6 tracking-tight">
+              I'm <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-indigo-400">Sathish</span>
+            </h1>
+            
+            {/* Subheading */}
+            <h2 className="text-2xl md:text-4xl text-slate-300 mb-10 font-medium">
+              Full-Stack <span className="text-blue-400">MERN</span> Developer
+            </h2>
+            
+            {/* Action Buttons */}
+            <div className="flex flex-col sm:flex-row justify-center gap-6 mb-16">
+              <button
+                onClick={handleDownload}
+                className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-2xl inline-flex items-center justify-center transition-all duration-300 hover:shadow-xl hover:-translate-y-1 w-full sm:w-auto text-lg"
+              >
+                <svg
+                  className="w-6 h-6 mr-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2.5}
+                    d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                  />
+                </svg>
+                Download Resume
+              </button>
+              
+              <Link 
+                smooth 
+                to="#contact" 
+                className="bg-white hover:bg-slate-50 text-blue-600 border-2 border-blue-600 font-bold py-4 px-8 rounded-2xl inline-flex items-center justify-center transition-all duration-300 hover:shadow-xl hover:-translate-y-1 w-full sm:w-auto text-lg"
+              >
+                Contact Me
+              </Link>
+            </div>
+            
+            {/* Social Links */}
+            <div className="flex justify-center gap-6">
+              {[
+                { href: "https://github.com/sathish-RG", icon: "M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" },
+                { href: "https://www.linkedin.com/in/sathish-rg/", icon: "M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" },
+                { href: "mailto:rsathishece@hotmail.com", icon: "M8.941.435a2 2 0 0 0-1.882 0l-6 3.2A2 2 0 0 0 0 5.4v.314l6.709 3.932L8 8.928l1.291.718L16 5.714V5.4a2 2 0 0 0-1.059-1.765zM16 6.873l-5.693 3.337L16 13.372v-6.5Zm-.059 7.611L8 10.072.059 14.484A2 2 0 0 0 2 16h12a2 2 0 0 0 1.941-1.516M0 13.373l5.693-3.163L0 6.873z" }
+              ].map((social, i) => (
+                <a 
+                  key={i}
+                  href={social.href} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="bg-slate-900/50 hover:bg-blue-600 p-4 rounded-2xl shadow-xl transition-all duration-300 group hover:-translate-y-1 border border-slate-800"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                    className="text-slate-400 group-hover:text-white w-6 h-6"
+                  >
+                    <path d={social.icon} />
+                  </svg>
+                </a>
+              ))}
+            </div>
+          </motion.div>
+        </div>
+      </section>
 
 
       {/*About page content gose here */}
@@ -167,9 +149,8 @@ const MainPage = () => {
     </h2>
     
     <div className="flex flex-col md:flex-row items-center gap-8">
-      <div className="md:w-1/3 flex justify-center">
-        <div className="h-64 w-64 rounded-full bg-blue-100 overflow-hidden border-4 border-blue-200">
-          {/* Replace with your image */}
+      <div className="md:w-1/3 flex justify-center mb-8 md:mb-0">
+        <div className="h-48 w-48 md:h-64 md:w-64 rounded-full bg-blue-100 overflow-hidden border-4 border-blue-200 shadow-xl">
           <img 
             src="/sathish.jpg" 
             alt="Sathish - MERN Stack Developer"
@@ -248,7 +229,9 @@ const MainPage = () => {
   </div>
 </section>
       {/*Skills page content gose here */}
-      <section id="skills" className="py-20 bg-gray-50">
+      <section id="skills" className="py-24 bg-blue-50/50 relative overflow-hidden">
+        {/* Subtle background decoration for Skills section */}
+        <div className="absolute top-0 right-0 w-64 h-64 bg-blue-100/50 rounded-full blur-3xl -mr-32 -mt-32"></div>
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -279,23 +262,23 @@ const MainPage = () => {
                   {skill.icon}
                 </div>
                 <h3 className="text-xl font-semibold text-gray-800 mb-2">{skill.name}</h3>
-                <div className="w-full bg-gray-200 rounded-full h-2.5">
+                <div className="w-full bg-slate-200 rounded-full h-3 mb-2 overflow-hidden">
                   <motion.div
                     initial={{ width: 0 }}
                     whileInView={{ width: `${skill.level}%` }}
-                    transition={{ duration: 1, delay: index * 0.2 }}
+                    transition={{ duration: 1.5, ease: "easeOut", delay: index * 0.1 }}
                     viewport={{ once: true }}
-                    className="h-2.5 rounded-full bg-blue-600"
+                    className="h-full rounded-full bg-gradient-to-r from-blue-600 to-indigo-600"
                   ></motion.div>
                 </div>
-                <span className="mt-2 text-sm text-gray-600">{skill.level}%</span>
+                <span className="mt-1 text-sm font-bold text-blue-600">{skill.level}%</span>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
       {/*Projects page content gose here */}
-      <section id="projects" className="py-20 bg-white">
+      <section id="projects" className="py-24 bg-white relative">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -320,7 +303,8 @@ const MainPage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+                whileHover={{ y: -10 }}
+                className="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 border border-slate-100 group"
               >
                 <div className="h-48 overflow-hidden">
                   <img 
@@ -371,7 +355,9 @@ const MainPage = () => {
         </div>
       </section>
       {/*Contacts page content gose here */}
-      <section id="contact" className="py-20 bg-gray-50">
+      <section id="contact" className="py-24 bg-indigo-50/50 relative overflow-hidden">
+        {/* Subtle background decoration for Contact section */}
+        <div className="absolute bottom-0 left-0 w-64 h-64 bg-indigo-100/50 rounded-full blur-3xl -ml-32 -mb-32"></div>
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
